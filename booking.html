@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    body {
+        background-image: url(foodservice.jpg);
+        color: white;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    label {
+        color: white;
+    }
+
+
+    div.h1 {
+        font-style: normal;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    div {
+        background-color: rgba(67, 86, 110, 0.77);
+        border-radius: 10px;
+        padding: 50px;
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: rgba(58, 58, 58, 0.746);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        transition: 0.55s;
+    }
+
+    button:hover {
+        background-color: rgba(154, 197, 232, 0.837);
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    h2 {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>Book Your Stay</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+    </nav>
+    <br>
+    <div>
+        <section class="container">
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="room">Room Type:</label>
+                <select id="room" name="room">
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="suite">Suite</option>
+                </select><br>
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required><br>
+
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required><br>
+
+                <button style="line-height: 4px;" type="submit">Submit Booking</button>
+                <button>RESET</button>
+                <form action="iccyy.and" method="post">
+                    <br>
+
+
+                </form>
+
+    </div>
+    </form>
+    <div class="success-message">
+        Thank you! Your booking information has been submitted successfully.
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy;2024 Elyte Hotel. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

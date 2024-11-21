@@ -1,0 +1,171 @@
+/* Reset button comment*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Main Wrapper */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #062344;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background: #12121438;
+    padding: 25px;
+}
+
+nav ul li {
+    margin: 0 1rem;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #4edae7;
+}
+
+/* Sections */
+section {
+    padding: 2rem 0;
+}
+
+/* Room Cards */
+.room {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background: #fff;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.room img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.room h3 {
+    margin: 1rem 0;
+    color: #333;
+}
+
+.room p {
+    line-height: 1.5;
+}
+
+.room-price {
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6b6b;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+
+}
+/* Sliding Gallery */
+.sliding-gallery {
+    overflow: hidden;
+    width: 100%;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 10);  /* Width = image width * number of images */
+    animation: scroll 20s linear infinite;
+}
+
+.slide {
+    width: 250px;          /* Fixed width */
+    height: 180px;         /* Fixed height */
+    flex-shrink: 0;
+    margin: 0 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Image styling within my slide */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* Ensurjjjes the image fills the slide without distortion */
+    border-radius: 8px;    /* for rounded corners */
+}
+
+
+/* Keyframes for sliding animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 5)); /* Move by half of total images for loop effect */
+    }
+}
+
+/* Hides the success message by default */
+.success-message {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: #fff;
+    background-color: #28a745; /* Green background */
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Show the success message when the form is filled out and submitted */
+.booking-form:valid + .success-message {
+    display: block;
+}
